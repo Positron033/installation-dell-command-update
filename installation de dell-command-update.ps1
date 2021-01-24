@@ -16,5 +16,5 @@ try {
 }
 catch {
     
-    Write-Error "téléchargement echoué ou fichier installation introuvable"
+    Write-Error "téléchargement echoué ou fichier d'installation introuvable"
 }
