@@ -1,5 +1,5 @@
 ﻿#création d'un fichier temporaire
-New-Item -Path "c:\temp -ItemType Directory"
+New-Item -Path "c:\temp" -ItemType Directory
 
 #téléchargement du fichier
 Invoke-WebRequest -Uri "https://dl.dell.com/FOLDER06231658M/1/Dell-Command-Update-Application-for-Windows-10_34T96_WIN_3.1.2_A00.EXE"  -OutFile "C:\temp\Dell-Command-Update-Application-for-Windows-10_34T96_WIN_3.1.2_A00.EXE" 
