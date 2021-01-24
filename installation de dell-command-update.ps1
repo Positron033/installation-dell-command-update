@@ -17,11 +17,12 @@ if (Test-Path -path "C:\temp\Dell-Command-Update-Application-for-Windows-10_34T9
 
 }
 
+#message erreur si fichier installation absent
 else {
 
     if (-not (Test-Path -path "C:\temp\Dell-Command-Update-Application-for-Windows-10_34T96_WIN_3.1.2_A00.EXE"))
     {
-    
+        #suppression du fichier c:\temp et message erreur
         Remove-Item C:\temp -Recurse -Force
         Write-Host "téléchargement echoué ou fichier d'installation introuvable" -ForegroundColor Red
 
